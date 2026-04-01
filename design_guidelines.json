@@ -1,0 +1,129 @@
+{
+  "theme": "light",
+  "archetype": "Swiss & High-Contrast (Premium Academic Variant)",
+  "colors": {
+    "primary": {
+      "hex": "#0f172a",
+      "tailwind": "slate-900",
+      "description": "Deep sophisticated slate for authoritative trust (Primary Brand)"
+    },
+    "secondary": {
+      "hex": "#2563eb",
+      "tailwind": "blue-600",
+      "description": "Vibrant academic blue for interactive states and highlights"
+    },
+    "accent": {
+      "hex": "#f97316",
+      "tailwind": "orange-500",
+      "description": "High-visibility orange for Primary CTAs ('Apply Now')"
+    },
+    "background": {
+      "hex": "#ffffff",
+      "tailwind": "white",
+      "description": "Pure white for maximum contrast and clean aesthetic"
+    },
+    "surface": {
+      "hex": "#f8fafc",
+      "tailwind": "slate-50",
+      "description": "Off-white for section backgrounds and cards"
+    },
+    "text": {
+      "primary": "slate-900",
+      "secondary": "slate-500"
+    }
+  },
+  "typography": {
+    "headings": {
+      "family": "Cabinet Grotesk, sans-serif",
+      "weights": ["800", "400"],
+      "strategy": "High-impact, tracking-tight, bold. No generic sans-serifs."
+    },
+    "body": {
+      "family": "Manrope, sans-serif",
+      "weights": ["400", "500", "600"],
+      "strategy": "Clean, highly legible, modern geometric."
+    },
+    "scale": {
+      "h1": "text-5xl md:text-6xl lg:text-[4rem] tracking-tight leading-none font-extrabold",
+      "h2": "text-3xl md:text-4xl lg:text-5xl tracking-tight leading-tight font-bold",
+      "h3": "text-2xl font-bold tracking-tight",
+      "body": "text-base md:text-lg leading-relaxed text-slate-600",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em] text-blue-600"
+    }
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-20 md:py-32",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "grid_strategy": "Bento Grid (Tetris Mode) - grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8. Mix tall, wide, and square cards to create visual tension and artful asymmetry. For Dashboard, use Control Room grid."
+  },
+  "components": {
+    "hero_carousel": {
+      "type": "custom_framer_motion",
+      "instructions": "Full height (min-h-[80vh] or 90vh) relative container. Use AnimatePresence for smooth crossfade or slide between images every 5 seconds. Pause on hover. Absolute positioned text overlay with z-10.",
+      "overlay": "bg-gradient-to-t from-slate-900/80 via-slate-900/30 to-transparent to ensure perfect text readability."
+    },
+    "cards": {
+      "border_radius": "rounded-2xl md:rounded-3xl",
+      "shadow": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+      "hover_effect": "hover:-translate-y-2 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-300 ease-out",
+      "background": "bg-white",
+      "border": "border border-slate-100"
+    },
+    "buttons": {
+      "primary": "bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-full px-8 py-4 shadow-[0_0_20px_rgba(249,115,22,0.3)] hover:shadow-[0_0_30px_rgba(249,115,22,0.5)] hover:scale-105 transition-all duration-300",
+      "secondary": "bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 font-bold rounded-full px-8 py-4 transition-all duration-300"
+    },
+    "navigation": {
+      "type": "glassmorphism",
+      "classes": "fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/50"
+    },
+    "ai_chatbot": {
+      "position": "fixed bottom-8 right-8 z-50",
+      "design": "Floating bubble with pulse animation. Open state reveals a sleek chat interface with predefined quick-action buttons ('Fees?', 'Subjects?', 'Admission process?'). Use primary blue for the chat bubble."
+    }
+  },
+  "animations": {
+    "page_load": "Staggered fade-up (y: 20, opacity: 0 -> y: 0, opacity: 1) for text elements.",
+    "scroll": "Use framer-motion whileInView for sections to fade-up gracefully.",
+    "micro": "Buttons scale up slightly (scale 1.05) on hover. Images pan slowly (scale 1.05 over 10s) in the hero background (Ken Burns effect)."
+  },
+  "media": {
+    "hero_slider_images": [
+      {
+        "url": "https://images.pexels.com/photos/247823/pexels-photo-247823.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Modern campus building exterior"
+      },
+      {
+        "url": "https://images.pexels.com/photos/5211446/pexels-photo-5211446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Happy students at desks in classroom"
+      },
+      {
+        "url": "https://images.pexels.com/photos/5212329/pexels-photo-5212329.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Students engaged in classroom learning"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1733648213151-54ff57977151?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwyfHxzdHVkZW50cyUyMHNwb3J0cyUyMGFjdGl2aXRpZXN8ZW58MHx8fHwxNzc0NjcwNzYzfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Students playing sports activities"
+      }
+    ],
+    "about_image": {
+      "url": "https://images.unsplash.com/photo-1758270705639-9727f350f026?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwyfHxoYXBweSUyMHN0dWRlbnRzJTIwY2xhc3Nyb29tJTIwbGVhcm5pbmd8ZW58MHx8fHwxNzc0NjcwNzYyfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Students collaborating for About Us or Admission section"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install required dependencies: framer-motion, lucide-react.",
+    "Set up Cabinet Grotesk and Manrope in tailwind config.",
+    "Implement the Hero Auto-Slider: Create an array of the `hero_slider_images` provided. Use a setInterval (3000ms-5000ms) to change the active index. Use framer-motion AnimatePresence to crossfade images. On hover, clear the interval to pause. Overlay a dark gradient (`bg-gradient-to-t from-slate-900/80 via-slate-900/30 to-slate-900/10`) to ensure text pops.",
+    "The Hero text must include an 'Apply Now' primary button (Orange) and 'Ask AI' secondary button.",
+    "Build the AI Chatbot component as a floating button in the bottom right. When clicked, it should open a sleek chat window. Display Quick Action chips for 'Fees?', 'Subjects?', 'Admission process?'.",
+    "For the Admission Form: Create a clean, multi-step layout using Shadcn Form components with large touch-friendly inputs.",
+    "For the Admin Dashboard: Use the 'Control Room' grid (grid-cols-4) with tighter spacing. Use Shadcn components for tables and charts. No rounded-3xl here, keep it to rounded-lg for density.",
+    "For the AI Homework Helper: Create a dedicated page with a clean chat interface.",
+    "Ensure all interactive elements have `data-testid` attributes (e.g., `data-testid=\"hero-apply-btn\"`).",
+    "Use generous padding `py-24` between sections on the homepage. Design a features/highlights section using the Tetris bento grid.",
+    "For cards on the homepage, strictly follow the border-radius `rounded-2xl` and hover animations (`-translate-y-2`, shadow increase).",
+    "Navigation bar must be sticky and use glassmorphism (`backdrop-blur-xl bg-white/80`).",
+    "Avoid typical Bootstrap looks. Follow the E1 rules of generous negative space."
+  ]
+}
